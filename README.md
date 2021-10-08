@@ -13,3 +13,8 @@
 - Управление настройками хостов и деплой приложения при помощи Ansible. Ansible: templates, handlers, dynamic inventory, vault, tags.
 - Написание Ansible ролей для управления конфигурацией сервисов и настройками хостов.
 - Локальная разработка Ansible ролей с Vagrant. Тестирование конфигурации.
+
+## [Микросервисы](https://github.com/IvanPrivalov/DevOps-Learning/tree/main/Микросервисы)
+
+### В данном разделе выполнены следующие задачи:
+

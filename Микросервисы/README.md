@@ -1,6 +1,3 @@
-# IvanPrivalov_microservices
-IvanPrivalov microservices repository
-
 ## Kubernetes 4 CI/CD в Kubernetes
 
 <details>
@@ -312,7 +309,7 @@ ingress-nginx-controller-7d7999cdf6-mxcgw   1/1     Running     0          2m20s
 
 ```
 
-![image 5](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/kubernetes-3/kubernetes/screens/k8s_5.png)
+![image 5](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/kubernetes/screens/k8s_5.png)
 
 Создадим Ingress для сервиса UI
 
@@ -450,7 +447,7 @@ $ kubectl apply -f ./kubernetes/reddit/ui-ingress.yml -n dev
 
 ```
 
-![image 6](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/kubernetes-3/kubernetes/screens/k8s_6.png)
+![image 6](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/kubernetes/screens/k8s_6.png)
 
 ### Задание со *
 
@@ -756,7 +753,7 @@ deployment.apps/mongo configured
 
 Создадим пост:
 
-![image 7](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/kubernetes-3/kubernetes/screens/k8s_7.png)
+![image 7](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/kubernetes/screens/k8s_7.png)
 
 Удалим deployment:
 
@@ -768,7 +765,7 @@ deployment.apps "mongo" deleted
 
 ```
 
-![image 8](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/kubernetes-3/kubernetes/screens/k8s_8.png)
+![image 8](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/kubernetes/screens/k8s_8.png)
 
 Снова создадим деплой mongo:
 
@@ -780,7 +777,7 @@ deployment.apps/mongo configured
 
 ```
 
-![image 9](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/kubernetes-3/kubernetes/screens/k8s_9.png)
+![image 9](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/kubernetes/screens/k8s_9.png)
 
 Наш пост на месте.
 
@@ -895,7 +892,7 @@ minikube service list
 
 ```
 
-![image 1](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/kubernetes-2/kubernetes/screens/k8s_1.png)
+![image 1](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/kubernetes/screens/k8s_1.png)
 
 
 ### Dashboard
@@ -948,7 +945,7 @@ minikube service ui -n dev
 
 ```
 
-![image 2](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/kubernetes-2/kubernetes/screens/k8s_2.png)
+![image 2](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/kubernetes/screens/k8s_2.png)
 
 ### Yandex Cloud Managed Service for kubernetes
 
@@ -1046,7 +1043,7 @@ NodePort:                 <unset>  32093/TCP
 
 ```
 
-![image 3](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/kubernetes-2/kubernetes/screens/k8s_3.png)
+![image 3](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/kubernetes/screens/k8s_3.png)
 
 ### Разверните Kubernetes-кластер в Yandex cloud с помощью Terraform
 
@@ -1108,7 +1105,7 @@ cl1hh42o2998dfbupaim-ivox   Ready    <none>   7m43s   v1.19.10   10.128.0.28   6
 
 Приложение доступно по адресу http://178.154.240.237:32093/
 
-![image 4](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/kubernetes-2/kubernetes/screens/k8s_4.png)
+![image 4](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/kubernetes/screens/k8s_4.png)
 
 </details>
 
@@ -1789,7 +1786,7 @@ docker-compose -f docker-compose.yml up -d
 
 Убедимся, что список endpoint-ов Prometheus появился ещё один endpoint - node.
 
-![image 1](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/monitoring-1/monitoring/Screenshot_4.png)
+![image 1](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/monitoring/Screenshot_4.png)
 
 Добавим нагрузки на Docker Host и проверм:
 
@@ -1801,7 +1798,7 @@ yes > /dev/null
 
 ```
 
-![image 2](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/monitoring-1/monitoring/Screenshot_5.png)
+![image 2](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/monitoring/Screenshot_5.png)
 
 ## Обазы в DockerHub
 
@@ -1888,7 +1885,7 @@ docker-compose -f docker-compose.yml up -d
 
 ```
 
-![image 3](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/monitoring-1/monitoring/Screenshot_6.png)
+![image 3](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/monitoring/Screenshot_6.png)
 
 # Удалим ресурсы:
 
@@ -2010,7 +2007,7 @@ docker exec -it gitlab-runner gitlab-runner register \
 
 8. Если все успешно, то должен появится новый ранер в Settings -> CI/CD -> Pipelines -> Runners секция Available specific runners и после появления ранера должен выполнится пайплайн.
 
-![image 1](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/gitlab-ci-1/gitlab-ci/Screenshot_1.png)
+![image 1](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/gitlab-ci/Screenshot_1.png)
 
 9. Добавление Reddit в проект:
 
@@ -2058,7 +2055,7 @@ gem 'rack-test'
 
 12. Запушим код в GitLab и убедимся, что test_unit_job гоняет тесты.
 
-![image 2](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/gitlab-ci-1/gitlab-ci/Screenshot_2.png)
+![image 2](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/gitlab-ci/Screenshot_2.png)
 
 13. Добавим в .gitlab-ci.yml новые окружения и условия запусков для ранеров:
 
@@ -2151,7 +2148,7 @@ git push gitlab gitlab-ci-1 --tags
 
 ```
 
-![image 3](https://github.com/Otus-DevOps-2021-05/IvanPrivalov_microservices/blob/gitlab-ci-1/gitlab-ci/Screenshot_3.png)
+![image 3](https://github.com/IvanPrivalov/DevOps-Learning/blob/main/Микросервисы/gitlab-ci/Screenshot_3.png)
 
 Stage и Production окружения запускаются вручную
 
